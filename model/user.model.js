@@ -20,7 +20,7 @@ const UserSchema = new Schema({
 
 const User = mongoose.model('user', UserSchema);
 
-// Add a 'dummy' user (every time you require this file!)
+// Add a 'dummy' user (every time4 you require this file!)
 const user = new User({
     name: 'Joe',
     title: 'Mr.',
