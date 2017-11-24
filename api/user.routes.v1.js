@@ -24,7 +24,7 @@ routes.get('/users', function(req, res) {
 // Vorm van de URL: http://hostname:3000/api/v1/users/23
 //
 routes.get('/users/:id', function(req, res) {
-    var query = User.findOne({name: req})
+    var query = User.findOne({name: "Joe"})
         .then((users)=>{
             res.status(200).json(users);
         })
